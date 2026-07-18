@@ -238,3 +238,82 @@ body{
         grid-template-columns:1fr;
     }
 }
+/* Testimonials */
+.testimonials{
+    padding:90px 8%;
+    background:#ffffff;
+}
+.testimonials h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+.testimonial-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+.testimonial-card{
+    background:#f8fafc;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+.testimonial-card:hover{
+    transform:translateY(-10px);
+}
+.testimonial-card img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+.stars{
+    color:gold;
+    font-size:22px;
+    margin:15px 0;
+}
+.testimonial-card p{
+    line-height:1.7;
+    color:#555;
+}
+@media(max-width:900px){
+.testimonial-container{
+grid-template-columns:1fr;
+}
+}
+/* FAQ */
+.faq{
+    padding:90px 8%;
+    background:#f8fafc;
+}
+.faq h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+.faq-item{
+    margin-bottom:20px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+.faq-question{
+    width:100%;
+    padding:20px;
+    font-size:18px;
+    text-align:left;
+    border:none;
+    cursor:pointer;
+    background:white;
+    font-weight:bold;
+}
+.faq-answer{
+    display:none;
+    padding:20px;
+    background:#fff;
+    line-height:1.7;
+}
